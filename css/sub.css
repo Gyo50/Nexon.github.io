@@ -150,7 +150,7 @@ header {
   
   .logo a {
     display: block;
-    background-image: url(/mainimg/logo.png);
+    background-image: url('/mainimg/logo.png');
     width: 135px;
     height: 45px;
     background-position: center;
@@ -320,7 +320,7 @@ header {
     height: 980px;
     text-align: center;
     width:100%;
-    background-image: url(/serveimg/company.png);
+    background-image: url('/serveimg/company.png');
     background-repeat: no-repeat;
     background-size: cover;
     position:relative;
