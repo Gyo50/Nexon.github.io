@@ -2,7 +2,12 @@ const support = document.querySelectorAll('.support-img');
 const health = document.querySelectorAll('.health-img');
 const growth = document.querySelectorAll('.growth-img');
 
-
+document.addEventListener("DOMContentLoaded", function () {
+    const overlayup = document.querySelector(".overlay-up"); 
+    const overlaydown = document.querySelector(".overlay-down"); 
+    overlayup.classList.add("animate");
+    overlaydown.classList.add("animate");
+});
 document.addEventListener("DOMContentLoaded", function () {
     const navItems = document.querySelectorAll(".nav-item");
     const point = document.querySelector('ul li:nth-child(5) a')
@@ -91,9 +96,3 @@ AOS.init();
 updateAosDelays();
 window.addEventListener('resize', updateAosDelays);
 
-document.addEventListener("DOMContentLoaded", function () {
-    const overlayup = document.querySelector(".overlay-up"); 
-    const overlaydown = document.querySelector(".overlay-down"); 
-    overlayup.classList.add("animate");
-    overlaydown.classList.add("animate");
-});
