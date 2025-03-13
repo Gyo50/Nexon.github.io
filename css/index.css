@@ -704,7 +704,7 @@ header {
 /*--------------------------mobile---------------------------------------*/
 .content-mobile{
     text-align: center;
-    background-image: url('/mainimg/2background.png');
+    background-image: url("/mainimg/2background.png");
     background-position: center;
     background-size: 1526px 907px;
     background-repeat: no-repeat;
