@@ -119,7 +119,7 @@ header {
   
   .logo a {
     display: block;
-    background-image: url("/mainimg/logo.png");
+    background-image: url("mainimg/logo.png");
     width: 135px;
     height: 45px;
     background-position: center;
@@ -442,7 +442,7 @@ header {
 
 .content-pc{
     text-align: center;
-    background-image: url("/mainimg/2background.png");
+    background-image: url("mainimg/2background.png");
     background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
@@ -704,7 +704,7 @@ header {
 /*--------------------------mobile---------------------------------------*/
 .content-mobile{
     text-align: center;
-    background-image: url("/mainimg/2background.png");
+    background-image: url("mainimg/2background.png");
     background-position: center;
     background-size: 1526px 907px;
     background-repeat: no-repeat;
