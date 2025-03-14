@@ -150,7 +150,7 @@ header {
   
   .logo a {
     display: block;
-    background-image: url(/mainimg/logo.png);
+    background-image: url('/mainimg/logo.png');
     width: 135px;
     height: 45px;
     background-position: center;
@@ -938,7 +938,6 @@ header {
         padding: 0;
     }
     .content-main{
-        height: 1155px;
         background-position: center;
         background-size: cover;
     }
