@@ -1601,7 +1601,7 @@ footer.visible{
     }
 
     .viewcase .nexonlogo {
-        display: none;
+        display: block;
     }
 
     .recruit .recruit-list li p {
