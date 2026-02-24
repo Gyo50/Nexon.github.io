@@ -1,0 +1,66 @@
+# 🎮 넥슨게임즈(NEXON GAMES) 클론 코딩 프로젝트
+
+넥슨게임즈 공식 웹사이트의 핵심 인터랙션과 디자인을Vanilla JS로 구현한 클론 코딩 프로젝트입니다. 단순한 시각적 복제를 넘어, 성능 최적화와 사용자 경험(UX) 향상을 위한 기술적 시도들을 포함하고 있습니다.
+
+## 🔗 Project Links
+* **Live Demo**: [데모링크](https://gyo50.github.io/Nexon.github.io/)
+* **Original Site**: [넥슨게임즈 공식 홈페이지](https://www.nexongames.co.kr/)
+
+---
+
+## 🛠 Tech Stack
+* **Language**: HTML5, CSS3, JavaScript (ES6+)
+* **Libraries**: 
+  * [AOS.js](https://michalsnik.github.io/aos/) (Scroll Animation)
+  * [GSAP](https://greensock.com/gsap/) (Advanced Interaction)
+* **Tools**: VS Code, Git
+
+---
+
+## 🚀 Key Features
+
+### 1. 인트로 비디오 시스템 & 시퀀스 제어
+- 페이지 진입 시 고화질 브랜드 영상(`main.mp4`)을 풀스크린으로 재생하여 몰입감 있는 첫인상을 제공합니다.
+- **스크롤 락(Scroll Lock)**: 영상 재생 중 불필요한 스크롤을 방지하고, 영상이 종료되는 시점에 맞춰 콘텐츠를 노출하는 시퀀스를 제어했습니다.
+
+### 2. GSAP 기반 인터랙티브 패럴랙스
+- 메인 섹션의 로고와 텍스트에 스크롤 속도와 연동되는 패럴랙스 효과를 적용했습니다.
+- 단순한 스크롤이 아닌 시각적 깊이감을 부여하여 기업의 브랜드 이미지를 역동적으로 표현했습니다.
+
+### 3. AOS를 활용한 콘텐츠 브라우징
+- 'Business', 'Games' 섹션 등 주요 정보 카드에 AOS 애니메이션을 적용하여 사용자의 시선 흐름에 맞춰 콘텐츠가 자연스럽게 등장하도록 구현했습니다.
+
+### 4. 반응형 GNB & 다국어 메뉴 구조
+- 마우스 호버 시 배경 높이가 부드럽게 확장되는 **Smart GNB**를 구현했습니다.
+- 미디어 쿼리를 활용하여 모바일 환경에서도 최적화된 메뉴 레이아웃과 터치 인터랙션을 제공합니다.
+
+---
+
+## 🔍 Troubleshooting & Learning
+
+### 1. 비디오 종료 시점과 콘텐츠 노출의 동기화 이슈
+- **문제**: 비디오가 끝나기 전 본문이 보이거나 종료 후 빈 화면이 유지되는 현상 발생.
+- **해결**: `video.ended` 리스너를 통해 영상 종료를 정확히 감지하고, CSS Transition과 JS `setTimeout`을 조합하여 본문이 페이드인(Fade-in)되는 시점을 정교하게 맞췄습니다.
+
+### 2. 모바일 반응형에서의 애니메이션 가독성 최적화
+- **문제**: PC 기준의 애니메이션 지연(delay) 시간이 모바일 세로 레이아웃에서는 사용자 경험을 저해함.
+- **해결**: JavaScript로 뷰포트를 감지하여 모바일 기기일 경우 AOS 애니메이션의 `delay`와 `duration` 값을 동적으로 조절하여 가독성을 높였습니다.
+
+### 3. 스타일 캡슐화와 유지보수
+- **학습**: `reset.css`, `style.css`, `sub.css` 등으로 스타일시트를 분리하여 관리함으로써 코드의 가독성을 높이고, 특정 페이지의 수정이 전체 레이아웃에 영향을 주지 않도록 설계하는 법을 익혔습니다.
+
+---
+
+## 📂 Project Structure
+```text
+├── css/
+│   ├── reset.css   # 브라우저 기본 스타일 초기화
+│   ├── index.css   # 메인 페이지 전용 스타일
+│   ├── sub.css     # 서브 페이지 전용 스타일
+│   └── style.css   # 공통 스타일
+├── script/
+│   ├── main.js     # 메인 인터랙션 로직
+│   └── sub.js      # 서브 페이지 로직
+├── mainimg/        # 프로젝트 이미지 자원
+├── index.html      # 메인 페이지
+└── sub.html        # 서브 페이지
