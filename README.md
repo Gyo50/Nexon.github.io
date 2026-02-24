@@ -2,13 +2,13 @@
 
 넥슨게임즈 공식 웹사이트의 핵심 인터랙션과 디자인을Vanilla JS로 구현한 클론 코딩 프로젝트입니다. 단순한 시각적 복제를 넘어, 성능 최적화와 사용자 경험(UX) 향상을 위한 기술적 시도들을 포함하고 있습니다.
 
-## 🔗 Project Links
+## 🔗 프로젝트 링크
 * **Live Demo**: [데모링크](https://gyo50.github.io/Nexon.github.io/)
 * **Original Site**: [넥슨게임즈 공식 홈페이지](https://www.nexongames.co.kr/)
 
 ---
 
-## 🛠 Tech Stack
+## 🛠 기술스택
 * **Language**: HTML5, CSS3, JavaScript (ES6+)
 * **Libraries**: 
   * [AOS.js](https://michalsnik.github.io/aos/) (Scroll Animation)
@@ -17,7 +17,7 @@
 
 ---
 
-## 🚀 Key Features
+## 🚀 주요특징
 
 ### 1. 인트로 비디오 시스템 & 시퀀스 제어
 - 페이지 진입 시 고화질 브랜드 영상(`main.mp4`)을 풀스크린으로 재생하여 몰입감 있는 첫인상을 제공합니다.
@@ -36,7 +36,7 @@
 
 ---
 
-## 🔍 Troubleshooting & Learning
+## 🔍 문제 해결 및 학습
 
 ### 1. 비디오 종료 시점과 콘텐츠 노출의 동기화 이슈
 - **문제**: 비디오가 끝나기 전 본문이 보이거나 종료 후 빈 화면이 유지되는 현상 발생.
@@ -51,7 +51,7 @@
 
 ---
 
-## 📂 Project Structure
+## 📂 폴더 구조
 ```text
 ├── css/
 │   ├── reset.css   # 브라우저 기본 스타일 초기화
